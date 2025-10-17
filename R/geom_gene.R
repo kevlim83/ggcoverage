@@ -325,6 +325,7 @@ ggplot_add.gene <- function(object, plot, object_name) {
   gene.final.plot <- gene.plot +
     geom_text(
       data = label.df,
+      color="white",
       mapping = aes_string(x = "pos", y = "group", label = "gene"),
       vjust = label.vjust, size = label.size
     ) +
